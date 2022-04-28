@@ -120,3 +120,93 @@ sidebar ul ul li {
   width: auto;
   margin: 0;
 }
+section {
+  /* border: 2px solid black; */
+  height: 800px;
+}
+section > div {
+  /* border: 1px solid red; */
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  vertical-align: top;
+  overflow: hidden;
+  position: relative;
+}
+
+.sec_img img {
+  width: 100%;
+  position: absolute;
+  margin: 0;
+}
+.sec_text {
+  padding-right: 20px;
+  padding-top: 130px;
+  padding-left: 120px;
+}
+.sec_text > * {
+  width: 100%;
+  margin: 0;
+}
+.last_sec h2, .sec_text h2 {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 46px;
+  margin-bottom: 24px;
+}
+.last_sec p, .sec_text p {
+  margin-top: 0;
+  font-size: 26px;
+  line-height: 38px;
+  letter-spacing: -.1px;
+}
+section:nth-of-type(2) .sec_text {
+  padding-top: 120px;
+  padding-left: 40px;
+}
+.last_sec {
+  text-align: center;
+  padding-top: 130px;
+}
+.last_sec p {
+  width: 800px;
+}
+.btn {
+  margin: 80px 20px 0;
+  display: inline-block;
+  border: 1px solid black;
+  text-align: center;
+  width: 280px;
+  text-decoration: none;
+  padding: 18px 30px;
+  border-radius: 4px;
+}
+.btn-black {
+  background: black;
+  color: white;
+  border-color: white;
+}
+.mobile-visible {
+  display: none;
+}
+.sec_text h2 span::after {
+  content: "";
+  display: block;
+}
+#pic1 {
+  width: 1110px;
+  top: 80px;
+  left: 40px;
+  transform: rotate(45deg);
+}
+#pic2 {
+  width: 650px;
+  top: 60px;
+  right: -5px;
+}
+#pic3 {
+  width: 1110px;
+  top: 140px;
+  left: 40px;
+}

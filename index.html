@@ -35,88 +35,8 @@
         opacity: .4;
         z-index: -1;
       }
-      section {
-        /* border: 2px solid black; */
-        height: 800px;
-      }
-      section > div {
-        /* border: 1px solid red; */
-        display: inline-block;
-        width: 50%;
-        height: 100%;
-        vertical-align: top;
-        overflow: hidden;
-        position: relative;
-      }
+      
 
-      .sec_img img {
-        width: 100%;
-        position: absolute;
-        margin: 0;
-      }
-      .sec_text {
-        padding-right: 20px;
-        padding-top: 130px;
-        padding-left: 120px;
-      }
-      .sec_text > * {
-        width: 100%;
-        margin: 0;
-      }
-      .last_sec h2, .sec_text h2 {
-        margin-top: 0;
-        font-weight: normal;
-        font-size: 36px;
-        line-height: 46px;
-        margin-bottom: 24px;
-      }
-      .last_sec p, .sec_text p {
-        margin-top: 0;
-        font-size: 26px;
-        line-height: 38px;
-        letter-spacing: -.1px;
-      }
-      section:nth-of-type(2) .sec_text {
-        padding-top: 120px;
-        padding-left: 40px;
-      }
-      .last_sec {
-        text-align: center;
-        padding-top: 130px;
-      }
-      .last_sec p {
-        width: 800px;
-      }
-      .btn {
-        margin: 80px 20px 0;
-        display: inline-block;
-        border: 1px solid black;
-        text-align: center;
-        width: 280px;
-        text-decoration: none;
-        padding: 18px 30px;
-        border-radius: 4px;
-      }
-      .btn-black {
-        background: black;
-        color: white;
-        border-color: white;
-      }
-      #pic1 {
-        width: 1110px;
-        top: 80px;
-        left: 40px;
-      }
-      #pic2 {
-        width: 650px;
-        top: 60px;
-        right: -5px;
-      }
-      #pic3 {
-        width: 1110px;
-        top: 140px;
-        left: 40px;
-      }
 
     </style>
   </head>
@@ -129,7 +49,8 @@
 
     <section>
       <div class="sec_text">
-        <h2>Наглядный пример,<br>чтобы учиться веб-вёрстке</h2>
+        <!-- <h2>Наглядный пример,<br>чтобы учиться веб-вёрстке</h2> -->
+        <h2>Наглядный пример, <span></span>чтобы учиться веб-вёрстке</h2>
         <p>Разработан для изучения основ веб-вёрстки, <br>языка гипертекстовой разметки HTML <br>и&nbsp;каскадных таблиц стилей CSS</p>
       </div><!--
       --><div class="sec_img">
@@ -138,12 +59,15 @@
     </section>
 
     <section>
-      <div class="sec_img">
+      <div class="sec_img mobile-hidden">
           <img id="pic2" src="img/pic2.png" alt="">
       </div><!--
       --><div class="sec_text">
         <h2>С нуля до первого сайта <br>под компьютеры, смартфоны и&nbsp;планшеты</h2>
         <p>Чтобы начать изучать веб-вёрстку на этом проекте, <br>не требуется каких-то специальных знаний, кроме базового умения пользоваться компьютером</p>
+      </div>
+      <div class="sec_img mobile-visible">
+          <img id="pic2" src="img/pic2.png" alt="">
       </div>
     </section>
 
